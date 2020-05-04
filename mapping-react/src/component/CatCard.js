@@ -1,13 +1,13 @@
 import React from 'react'
 
 
-function CatCard(){
+function CatCard(props){
     return(
         <div className="contact-card">
-                <img src="http://placekitten.com/400/300"/>
-                <h3>Destroyer</h3>
-                <p>Phone: (212) 555-3456</p>
-                <p>Email: ofworlds@yahoo.com</p>
+            <img src={props.imUrl}/>
+            <h3>{props.name}</h3>
+            <p>Phone:{props.phone}</p>
+            <p>Email:{props.email}</p>
         </div>
     )
 }
