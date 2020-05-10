@@ -7,7 +7,22 @@ import CatCard from './component/CatCard';
 class App extends Component {
   state={
     count:1
+    
   }
+  incrementCount(){
+  this.setState((anterior)=>{
+   return{ 
+   count:anterior.count + 1
+   }
+})
+  }
+  decrementCount(){
+    this.setState((prevState)=>{
+     return{ 
+     count:prevState.count - 1
+     }
+  })
+    }
   
   render(){
    
@@ -19,6 +34,8 @@ class App extends Component {
       <CatCard name="Mr. Whiskerson" imgUrl="http://placekitten.com/300/200" phone="(212) 555-1234" email="mr.whiskaz@catnap.meow"/>
      
   <p>Count: {this.state.count}</p>
+  <button onClick={this.incrementCount.bind(this)}>+</button>
+  <button onClick={this.decrementCount.bind(this)}>-</button>
     </div>
   );
 }
