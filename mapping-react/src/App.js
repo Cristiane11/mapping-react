@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CatCard from './component/CatCard';
+import Square from './component/Square';
 
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
   incrementCount(){
   this.setState((anterior)=>{
    return{ 
-   count:anterior.count + 1
+   count:anterior.count + 5
    }
 })
   }
@@ -36,6 +37,9 @@ class App extends Component {
   <p>Count: {this.state.count}</p>
   <button onClick={this.incrementCount.bind(this)}>+</button>
   <button onClick={this.decrementCount.bind(this)}>-</button>
+    <hr/>
+    <Square/>
+    
     </div>
   );
 }
