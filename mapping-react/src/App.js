@@ -38,15 +38,16 @@ class App extends Component {
   <button onClick={this.incrementCount.bind(this)}>+</button>
   <button onClick={this.decrementCount.bind(this)}>-</button>
     <hr/>
-    <Square/>
-    <Square/>
-    <Square/>
-    <Square/>
-    <Square/>
-    <Square/>
-    <Square/>
-    <Square/>
-    <Square/>
+    <div>
+      <Square/><Square/><Square/>
+    </div>
+    <div>
+      <Square/><Square/><Square/>
+    </div>
+    <div>
+      <Square/><Square/><Square/>
+    </div>
+    
     </div>
   );
 }
