@@ -58,3 +58,14 @@
 .contact-card > p {
   font-size: 12px;
 }
+.squareComponent{
+  background-color: white;
+  border: black solid 2px;
+  text-align: center;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  margin: -1;
+  display: inline-block;
+  vertical-align: top;
+}

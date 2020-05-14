@@ -39,7 +39,14 @@ class App extends Component {
   <button onClick={this.decrementCount.bind(this)}>-</button>
     <hr/>
     <Square/>
-    
+    <Square/>
+    <Square/>
+    <Square/>
+    <Square/>
+    <Square/>
+    <Square/>
+    <Square/>
+    <Square/>
     </div>
   );
 }
