@@ -15,7 +15,7 @@ export default class Square extends Component {
   }
   render(){
     return <div className='squareComponent'
-              onClick={this.handleClick.bind(this)}>{this.state.currentBoard}
+              onClick={this.handleClick.bind(this)}>{tiles[this.state.currentBoard]}
             </div>
   }
 }
