@@ -7,9 +7,16 @@ import Square from './component/Square';
 
 class App extends Component {
   state={
-    count:1
+    count:1,
+    board:["","","",
+            "","","",
+            "","",""],
+    turn:'X'
     
   }
+   updateBoard(i){
+
+   }
   incrementCount(){
   this.setState((anterior)=>{
    return{ 
