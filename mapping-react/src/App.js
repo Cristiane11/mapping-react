@@ -15,6 +15,13 @@ class App extends Component {
     
   }
    updateBoard(i){
+     let board = this.state.board.slice();
+     let turn = this.state.turn;
+     if (board[i]==""){
+       board[i]= turn;
+       turn = turn === '0'?'X':'0';
+     }
+
 
    }
   incrementCount(){
