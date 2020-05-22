@@ -14,6 +14,11 @@ class App extends Component {
     turn:'X'
     
   }
+  
+  playerWon(){
+    const board = this.state.board
+  }
+
    updateBoard(i){
      let board = this.state.board.slice();
      let turn = this.state.turn;
@@ -21,7 +26,10 @@ class App extends Component {
        board[i]= turn;
        turn = turn === '0'?'X':'0';
      }
-
+     this.setState({
+       board,
+       turn,
+     })
 
    }
   incrementCount(){
