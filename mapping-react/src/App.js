@@ -14,7 +14,7 @@ class App extends Component {
     turn:'X'
     
   }
-  'o' 'x' 'tie' ''
+ 
   playerWon(){
     const board = this.state.board;
     const winningConditions =[
@@ -27,10 +27,12 @@ class App extends Component {
       [0,4,8],
       [2,4,6],
     ];
-    for(let i =0; i<winningConditions.length; i ++)[
+    for(let i =0; i<winningConditions.length; i ++){
       const [a, b, c] = winningConditions[i];
-  
-    ]
+      if(board[a]!== ''&& board[a]===board[b]===board[c]){
+       return board[a]; 
+      }
+    }
   }
 
    updateBoard(i){
